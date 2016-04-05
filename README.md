@@ -181,3 +181,15 @@ Startup sqlplus using the "Easy Connect" form
 ```
 sqlplus hr/oracle@localhost/orcl
 ```
+If all went well, you'll see
+```
+SQL*Plus: Release 11.2.0.4.0 Production on Tue Apr 5 12:30:24 2016
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+```
+That's it!  I hope this helps...
