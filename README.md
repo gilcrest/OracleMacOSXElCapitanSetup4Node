@@ -68,11 +68,11 @@ Unzip each of the downloaded instant client zips
 
 Once you've completed unzipping all 3 files, you'll notice they're all exploded into the same directory: instantclient_11_2 - you need to move this directory to /opt/oracle and rename the directory to instantclient while doing so with the following command
 
-$ mv instantclient_11_2 /opt/oracle/instantclient
+`$ mv instantclient_11_2 /opt/oracle/instantclient`
 
 create a symbolic link file in the opt/oracle/instantclient directory
 
-$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib
+`$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib`
 
 create more symbolic links, but this time to the default library path (/usr/local/lib)
 
