@@ -6,12 +6,13 @@ Long time Windows user here, trying to get setup on my new Macbook Pro for use w
 If you're like me and used to setting up Oracle on Windows (where they have a pretty easy database installation for their Express Edition "XE"), then the macbook OS X setup is a bit bewildering. Since I am a macbook newbie, I will spell out step by step exactly what I did to setup my local environment for node development with Oracle to aid those of you who may have a similar challenge (and to help myself for the next time I need to do this).  There are some excellent posts from folks like [Christopher Jones](https://blogs.oracle.com/opal/) and [Dan McGhan](https://jsao.io/) , but most assume you know what you are doing on a macbook, and I for one do not...  There are numerous components you need to be successful on your Mac when developing node apps with Oracle, namely:
 
  - Virtualbox
+ - Xcode
  - Oracle Instant Client
  - sqlplus
  - node-oracledb package
 
 ## Virtualbox ##
-So, in order to run an Oracle database locally, you need VirtualBox - from the Virtualbox site  - "VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."  So, you're probably thinking, I want to run a database on my macbook, why do I need virtualization?  Well, unlike on Windows, Oracle does not offer Oracle XE expressly for OS X (at least not any semi-current version of Oracle).  I don't know why, but they just don't, so... you have to run a VM on your machine to have an Oracle database running on your macbook.  Oracle has nicely packaged up a TODO:Talk about VirtualBox installation
+In order to run an Oracle database locally on OS X, you need VirtualBox.  From the Virtualbox site - "VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."  So, you're probably thinking, I want to run a database on my macbook, why do I need virtualization?  Well, unlike on Windows, Oracle does not offer Oracle XE expressly for OS X (at least not any semi-current version of Oracle).  I don't know why, but they just don't, so... you have to run a VM on your machine to have an Oracle database running on your macbook. Dan McGhan has done all the legwork for step by step instructions and I followed them verbatim up through *Part 2: Import Database App Development VM*.  Parts 3 an 4 do continue the node setup, but I believe it is actually installing node on the VM, however, my goal is to have it running on my local machine, not the VM (again, I only need the VM to run a local Oracle database).
 
 Once you've got VirtualBox installed and running, you'll need a few more things installed:
 
