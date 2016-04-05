@@ -70,13 +70,13 @@ Once you've completed unzipping all 3 files, you'll notice they're all exploded 
 
 `$ mv instantclient_11_2 /opt/oracle/instantclient`
 
-create a symbolic link file in the opt/oracle/instantclient directory
+create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
 
 `$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib`
 
 create more symbolic links, but this time to the default library path (/usr/local/lib)
 
-$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/
+`$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/`
 
 Installation of node-oracledb is the simplest step of the lot 
 
