@@ -88,3 +88,7 @@ That's it for the Instant Client installation, you can validate proper installat
  2. install sqlplus
 
 ## node-oracledb ##
+
+Install node-oracledb from the NPM registry:
+
+`npm install oracledb`
