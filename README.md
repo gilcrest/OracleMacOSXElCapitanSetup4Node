@@ -167,5 +167,5 @@ $ mkdir ~/lib
 ```
 Create symbolic links for required libraries
 ```
-ln -s ~/instantclient_11_2/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
+ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
