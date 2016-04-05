@@ -136,3 +136,8 @@ module.exports = {
   externalAuth  : process.env.NODE_ORACLEDB_EXTERNALAUTH ? true : false
 };
 ```
+
+Run one of the examples
+```
+node select1.js
+```
