@@ -43,7 +43,8 @@ switch to the root user su (superuser) using sudo:
 `$ sudo su -`
 
 After typing your password, you are put to the /var/root directory, I switched to the root directory:
-$ cd /
+
+`$ cd /`
 
 create the opt directory in root (after confirming it does not exist on my macbook):
 $ mkdir opt
