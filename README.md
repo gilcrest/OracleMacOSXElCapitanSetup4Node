@@ -42,24 +42,27 @@ switch to the root user su (superuser) using sudo:
 
 `$ sudo su -`
 
-After typing your password, you are put to the /var/root directory, I switched to the root directory:
+After typing your password, you are put to the /var/root directory, switch to the root directory:
 
 `$ cd /`
 
-create the opt directory in root (after confirming it does not exist on my macbook):
-$ mkdir opt
+create the opt directory in root (after confirming it does not already exist on your macbook):
+
+`$ mkdir opt`
 
 create the /opt/oracle directory
-$ mkdir /opt/oracle
+
+`$ mkdir /opt/oracle`
 
 navigate back to the Downloads folder (I have to use the full path here as I'm still logged in as root and can't use ~/Downloads)
 
-$ cd /Users/putyourusernamehere/Downloads
+`$ cd /Users/putyourusernamehere/Downloads`
 
 Unzip each of the downloaded instant client zips
-$ unzip instantclient-basic-macos.x64-11.2.0.4.0.zip
+
+`$ unzip instantclient-basic-macos.x64-11.2.0.4.0.zip
 $ unzip instantclient-sdk-macos.x64-11.2.0.4.0.zip
-$ unzip instantclient-sqlplus-macos.x64-11.2.0.4.0.zip
+$ unzip instantclient-sqlplus-macos.x64-11.2.0.4.0.zip`
 
 Once you've completed unzipping all 3 files, you'll notice they're all exploded into the same directory: instantclient_11_2 - you need to move this directory to /opt/oracle and rename the directory to instantclient while doing so with the following command
 
