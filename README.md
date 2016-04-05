@@ -6,6 +6,7 @@ Long time Windows user here, trying to get setup on my new Macbook Pro for use w
 If you're like me and used to setting up Oracle on Windows (where they have a pretty easy database installation for their Express Edition "XE"), then the macbook OS X setup is a bit bewildering. Since I am a macbook newbie, I will spell out step by step exactly what I did to setup my local environment for node development with Oracle to aid those of you who may have a similar challenge (and to help myself for the next time I need to do this).  There are some excellent posts from folks like [Christopher Jones](https://blogs.oracle.com/opal/) and [Dan McGhan](https://jsao.io/) , but most assume you know what you are doing on a macbook, and I for one do not...  There are numerous components you need to be successful on your Mac when developing node apps with Oracle, namely:
 
  - Virtualbox
+ - SQL Developer
  - Xcode
  - Oracle Instant Client
  - sqlplus
@@ -17,8 +18,10 @@ In order to run an Oracle database locally on OS X, you need VirtualBox.  From t
 The only other thing I did to alter the Virtualbox installation is to follow Christopher Jones' post [The Easiest Way to Install Oracle Database on Mac OS X](https://blogs.oracle.com/opal/entry/the_easiest_way_to_enable) and enabled the TCP rule exactly as he specified in the post.
 
 ## SQL Developer ##
-In order to 
-Xcode - this is a dependency of the node-oracledb driver, you get it from the Apple App Store.  It's a beefy program - close to 5GB, so you may wait a little while before it's downloaded and installed. Even after it's installed, when you open it for the first time, it will install some more stuff, so be patient....  Basically, I opened Xcode once after it was installed, but then never really needed to open it again in the context of node-oracledb usage
+In order to manage db objects and do just about anything in the database, I use SQL Developer.  The installation of this is straightforward and files/instructions can be found [here](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
+
+## Xcode ## 
+This is a dependency of the node-oracledb driver, you get it from the Apple App Store.  It's a beefy program - close to 5GB, so you may wait a little while before it's downloaded and installed. Even after it's installed, when you open it for the first time, it will install some more stuff, so be patient....  Basically, I opened Xcode once after it was installed, but then never really needed to open it again in the context of node-oracledb usage
 
 Oracle's Instant Client software in order to use Oracle's node-oracledb client.  You need to go to the Oracle Technology Network Site and download three files:
 Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI application
