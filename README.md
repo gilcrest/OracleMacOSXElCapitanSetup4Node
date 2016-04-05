@@ -82,7 +82,7 @@ exit to logout of the root user
 
 `$ exit`
 
-That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways, by:
+That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways:
 
  1. install node-oracledb
  2. install sqlplus
