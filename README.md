@@ -126,7 +126,7 @@ git clone https://github.com/oracle/node-oracledb.git
 
 ```
 
-once cloned, you can remove any directories you don't want (I chose to remove everything except the examples directory) and then modify the dbconfig.js file with the defaults for connecting to the database that is running on the Virtualbox VM you should have running.
+Once cloned, you can remove any directories you don't want (I chose to remove everything except the examples directory) and then modify the dbconfig.js file with the defaults for connecting to the database that is running on the Virtualbox VM you should have running.
 
 ```
 module.exports = {
