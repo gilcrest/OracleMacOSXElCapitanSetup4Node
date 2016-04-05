@@ -20,13 +20,22 @@ The only other thing I did to alter the Virtualbox installation is to follow Chr
 ## SQL Developer ##
 In order to manage db objects and do just about anything in the database, I use SQL Developer.  The installation of this is straightforward and files/instructions can be found [here](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
 
-## Xcode ## 
+Once SQL Developer is installed, connect to your Virtualbox database by creating a connection with Connection Type = "Basic", Hostname = "localhost", Port = 1521 and Service Name = "orcl"
+
+Once setup is complete, you just need to make sure your VM is up and running and SQL Developer should be able to connect (as it uses something other than the soon to be installed Instant Client).
+
+## Xcode
 This is a dependency of the node-oracledb driver, you get it from the Apple App Store.  It's a beefy program - close to 5GB, so you may wait a little while before it's downloaded and installed. Even after it's installed, when you open it for the first time, it will install some more stuff, so be patient....  Basically, I opened Xcode once after it was installed, but then never really needed to open it again in the context of node-oracledb usage
 
-Oracle's Instant Client software in order to use Oracle's node-oracledb client.  You need to go to the Oracle Technology Network Site and download three files:
-Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI application
-Instant Client Package - SDK: Additional header files and an example makefile for developing Oracle applications with Instant Client
-Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client (you don't technically need this for node developement, but I like it for debugging purposes)
+## Oracle Instant Client ##
+In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
+
+ 1. Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI application
+ 2. Instant Client Package - SDK: Additional header files and an example makefile for developing Oracle applications with Instant Client
+ 3. Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client (you don't technically need this for node developement, but I like it for debugging purposes)
+
+
+
 I chose the 64 bit version of these as that is appropriate for my machine. 
 Once everything is downloaded, you have a couple of choices to make, based on Oracle's instructions here - I chose to go with the "Install Instant Client in /opt" route.  I had to do a little research on this one, as other linux servers I've worked on already had an /opt directory, but my macbook did not. 
 
