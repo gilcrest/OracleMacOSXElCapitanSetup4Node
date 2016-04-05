@@ -40,47 +40,71 @@ Once everything is downloaded, you have a couple of choices to make, based on Or
 
 switch to the root user su (superuser) using sudo:
 
-`$ sudo su -`
+```
+$ sudo su -
+```
 
 After typing your password, you are put to the /var/root directory, switch to the root directory:
 
-`$ cd /`
+```
+$ cd /
+```
 
 create the opt directory in root (after confirming it does not already exist on your macbook):
 
-`$ mkdir opt`
+```
+$ mkdir opt
+```
 
 create the /opt/oracle directory
 
-`$ mkdir /opt/oracle`
+```
+$ mkdir /opt/oracle
+```
 
 navigate back to the Downloads folder (I have to use the full path here as I'm still logged in as root and can't use ~/Downloads)
 
-`$ cd /Users/putyourusernamehere/Downloads`
+```
+$ cd /Users/putyourusernamehere/Downloads
+```
 
 Unzip each of the downloaded instant client zips
 
-`$ unzip instantclient-basic-macos.x64-11.2.0.4.0.zip`
+```
+$ unzip instantclient-basic-macos.x64-11.2.0.4.0.zip
+```
 
-`$ unzip instantclient-sdk-macos.x64-11.2.0.4.0.zip`
+```
+$ unzip instantclient-sdk-macos.x64-11.2.0.4.0.zip
+```
 
-`$ unzip instantclient-sqlplus-macos.x64-11.2.0.4.0.zip`
+```
+$ unzip instantclient-sqlplus-macos.x64-11.2.0.4.0.zip
+```
 
 Once you've completed unzipping all 3 files, you'll notice they're all exploded into the same directory: instantclient_11_2 - you need to move this directory to /opt/oracle and rename the directory to instantclient while doing so with the following command
 
-`$ mv instantclient_11_2 /opt/oracle/instantclient`
+```
+$ mv instantclient_11_2 /opt/oracle/instantclient
+```
 
 create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
 
-`$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib`
+```
+$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib
+```
 
 create more symbolic links, but this time to the default library path (/usr/local/lib)
 
-`$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/`
+```
+$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/
+```
 
 exit to logout of the root user
 
-`$ exit`
+```
+$ exit
+```
 
 That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways:
 
@@ -89,6 +113,8 @@ That's it for the Instant Client installation, you can validate proper installat
 
 ## node-oracledb ##
 
-Install node-oracledb from the NPM registry:
+This is the fun/easy part - install node-oracledb from the NPM registry:
 
-`npm install oracledb`
+```
+npm install oracledb
+```
