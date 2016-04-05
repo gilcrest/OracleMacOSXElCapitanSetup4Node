@@ -173,3 +173,7 @@ Create symbolic links for required "SQL*Plus libraries" -- again, note directory
 ```
 ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} ~/lib/
 ```
+Add the Instant Client directory to the PATH environment variable
+```
+export PATH=/opt/oracle/instantclient:$PATH
+```
