@@ -113,8 +113,15 @@ That's it for the Instant Client installation, you can validate proper installat
 
 ## node-oracledb ##
 
-This is the fun/easy part - install node-oracledb from the NPM registry:
+This is the fun/easy part - install node-oracledb from the [NPM registry](https://www.npmjs.com/package/oracledb):
 
 ```
 npm install oracledb
+```
+
+Once installed, in order to validate, simply clone the node-oracledb Github repository into whichever directory you choose
+
+```
+git clone https://github.com/oracle/node-oracledb.git
+
 ```
