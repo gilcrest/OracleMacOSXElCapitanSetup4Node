@@ -1,6 +1,4 @@
 # OracleMacOSXElCapitanSetup4Node
-An OS X beginner's guide to installation of Oracle db and node-oracledb.  
-
 Long time Windows user here, trying to get setup on my new Macbook Pro for use with an Oracle database.  If you're an OS X / Linux wiz, this is probably not for you and you should go straight to the various Oracle installation pages, like [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#instosx).
 
 If you're like me and used to setting up Oracle on Windows (where they have a pretty easy database installation for their Express Edition "XE"), then the macbook OS X setup is a bit bewildering. Since I am a macbook newbie, I will spell out step by step exactly what I did to setup my local environment for node development with Oracle to aid those of you who may have a similar challenge (and to help myself for the next time I need to do this).  There are some excellent posts from folks like [Christopher Jones](https://blogs.oracle.com/opal/) and [Dan McGhan](https://jsao.io/), but most assume you know what you are doing on a macbook, and I for one do not... I give full credit to Chris and Dan, actually - their posts were tremendously helpful to me, I'm just going through in a bit more detail the steps I took to get node-oracledb up and running on my macbook. 
