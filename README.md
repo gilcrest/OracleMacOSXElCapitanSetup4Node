@@ -78,8 +78,13 @@ create more symbolic links, but this time to the default library path (/usr/loca
 
 `$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/`
 
-Installation of node-oracledb is the simplest step of the lot 
-
 exit to logout of the root user
 
-$ exit
+`$ exit`
+
+That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways, by:
+
+ 1. install node-oracledb
+ 2. install sqlplus
+
+## node-oracledb ##
