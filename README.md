@@ -177,3 +177,7 @@ Add the Instant Client directory to the PATH environment variable
 ```
 export PATH=/opt/oracle/instantclient:$PATH
 ```
+Startup sqlplus using the "Easy Connect" form
+```
+sqlplus hr/oracle@localhost/orcl
+```
