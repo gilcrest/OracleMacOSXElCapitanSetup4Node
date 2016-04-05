@@ -169,3 +169,7 @@ Create symbolic links for required "Basic package libraries" -- note the directo
 ```
 ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
+Create symbolic links for required "SQL*Plus libraries" -- again, note directory structure difference (same as above)
+```
+ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} ~/lib/
+```
