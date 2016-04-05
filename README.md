@@ -14,8 +14,10 @@ If you're like me and used to setting up Oracle on Windows (where they have a pr
 ## Virtualbox ##
 In order to run an Oracle database locally on OS X, you need VirtualBox.  From the Virtualbox site - "VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."  So, you're probably thinking, I want to run a database on my macbook, why do I need virtualization?  Well, unlike on Windows, Oracle does not offer Oracle XE expressly for OS X (at least not any semi-current version of Oracle).  I don't know why, but they just don't, so... you have to run a VM on your machine to have an Oracle database running on your macbook. Dan McGhan has done all the legwork for [step by step instructions](https://jsao.io/2015/10/creating-a-local-sandbox-for-node-js-and-oracle-database/) and I followed them verbatim up through *Part 2: Import Database App Development VM*.  Parts 3 an 4 do continue the node setup, but I believe it is actually installing node on the Virtualbox VM, however, my goal is to have it running on my local machine, not the VM (again, I only need the VM to run a local Oracle database).
 
-Once you've got VirtualBox installed and running, you'll need a few more things installed:
+The only other thing I did to alter the Virtualbox installation is to follow Christopher Jones' post [The Easiest Way to Install Oracle Database on Mac OS X](https://blogs.oracle.com/opal/entry/the_easiest_way_to_enable) and enabled the TCP rule exactly as he specified in the post.
 
+## SQL Developer ##
+In order to 
 Xcode - this is a dependency of the node-oracledb driver, you get it from the Apple App Store.  It's a beefy program - close to 5GB, so you may wait a little while before it's downloaded and installed. Even after it's installed, when you open it for the first time, it will install some more stuff, so be patient....  Basically, I opened Xcode once after it was installed, but then never really needed to open it again in the context of node-oracledb usage
 
 Oracle's Instant Client software in order to use Oracle's node-oracledb client.  You need to go to the Oracle Technology Network Site and download three files:
