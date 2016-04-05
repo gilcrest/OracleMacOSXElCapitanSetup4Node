@@ -141,3 +141,12 @@ Run one of the examples
 ```
 node select1.js
 ```
+You should get a result that looks like
+```
+[ { name: 'DEPARTMENT_ID' }, { name: 'DEPARTMENT_NAME' } ]
+[ [ 180, 'Construction' ] ]
+```
+That's really all that's needed for node-oracledb setup!
+
+## sqlplus ##
+If you also wish to be able to run sqlplus locally using the Instant Client, then 
