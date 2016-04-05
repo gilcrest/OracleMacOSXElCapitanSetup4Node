@@ -159,4 +159,13 @@ You should get a result that looks like
 That's really all that's needed for node-oracledb setup!
 
 ## sqlplus ##
-If you also wish to be able to run sqlplus locally using the Instant Client, then 
+If you also wish to be able to run sqlplus locally using the Instant Client, then do the following (basically steps 4 and 5 of the Instant Client [install instructions](http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html#ic_osx_inst)), though note the different directory path than given in the install instructions based on the /opt choice we made above.
+
+Create a new "~/lib" directory in your default user directory
+```
+$ mkdir ~/lib
+```
+Create symbolic links for required libraries
+```
+ln -s ~/instantclient_11_2/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
+```
