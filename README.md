@@ -39,7 +39,7 @@ In order to use Oracle's node-oracledb client, you need to go to the Oracle Tech
 Once everything is downloaded, you have a couple of choices to make, based on Oracle's instructions [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-531-install-instant-client-in-opt) or [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-532-install-instant-client-in-a-user-directory) - I chose to go with the "Install Instant Client in /opt" route.  I had to do a little research on this one, as other linux servers I've worked on already had an /opt directory, but my macbook did not. 
 
 switch to the root user su (superuser) using sudo:
-$ sudo su -
+`$ sudo su -`
 
 After typing your password, you are put to the /var/root directory, I switched to the root directory:
 $ cd /
