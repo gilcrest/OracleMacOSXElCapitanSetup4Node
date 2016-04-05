@@ -34,10 +34,9 @@ In order to use Oracle's node-oracledb client, you need to go to the Oracle Tech
  2. Instant Client Package - SDK: Additional header files and an example makefile for developing Oracle applications with Instant Client
  3. Instant Client Package - SQL*Plus: Additional libraries and executable for running SQL*Plus with Instant Client (you don't technically need this for node developement, but I like it for debugging purposes)
 
+*I chose the 64 bit version of these as that is appropriate for my machine.* 
 
-
-I chose the 64 bit version of these as that is appropriate for my machine. 
-Once everything is downloaded, you have a couple of choices to make, based on Oracle's instructions here - I chose to go with the "Install Instant Client in /opt" route.  I had to do a little research on this one, as other linux servers I've worked on already had an /opt directory, but my macbook did not. 
+Once everything is downloaded, you have a couple of choices to make, based on Oracle's instructions [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-531-install-instant-client-in-opt) or [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-532-install-instant-client-in-a-user-directory) - I chose to go with the "Install Instant Client in /opt" route.  I had to do a little research on this one, as other linux servers I've worked on already had an /opt directory, but my macbook did not. 
 
 switch to the root user su (superuser) using sudo:
 $ sudo su -
