@@ -165,7 +165,7 @@ Create a new "~/lib" directory in your default user directory
 ```
 $ mkdir ~/lib
 ```
-Create symbolic links for required libraries -- note the directory difference here from the Instant Client download instructions. Since we chose the /opt path for installation of node-oracledb, we need to ensure we use this is consistent
+Create symbolic links for required "Basic package libraries" -- note the directory difference here from the Instant Client download instructions. Since we chose the /opt path for installation of node-oracledb, we need to ensure we use this is consistent
 ```
 ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
