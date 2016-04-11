@@ -119,8 +119,8 @@ $ exit
 
 That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways:
 
- 1. install node-oracledb
- 2. install sqlplus
+ 1. install sqlplus
+ 2. install node-oracledb
 
 ## sqlplus ##
 If you also wish to be able to run sqlplus locally using the Instant Client, then do the following (basically step 5 of the Instant Client [install instructions](http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html#ic_osx_inst)), though note the different directory path than given in the install instructions based on the /opt choice we made above.
