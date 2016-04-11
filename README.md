@@ -66,10 +66,9 @@ $ unzip instantclient-sdk-macos.x64-11.2.0.4.0.zip
 $ unzip instantclient-sqlplus-macos.x64-11.2.0.4.0.zip
 ```
 
-Once you've completed unzipping all 3 files, you'll notice they're all exploded into the same directory: instantclient_11_2 - you need to move this directory to /opt/oracle and rename the directory to instantclient while doing so with the following command
-
+Once you've completed unzipping all 3 files, you'll notice they're all exploded into the same directory: instantclient_11_2 - you need to move this directory to your default User directory
 ```
-$ mv instantclient_11_2 /opt/oracle/instantclient
+mv instantclient_11_2 ~/
 ```
 
 create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
