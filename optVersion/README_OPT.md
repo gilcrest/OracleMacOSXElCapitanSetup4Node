@@ -77,3 +77,72 @@ exit to logout of the root user
 ```
 $ exit
 ```
+That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways:
+
+ 1. install node-oracledb
+ 2. install sqlplus
+
+## node-oracledb ##
+
+This is the fun/easy part - install node-oracledb from the [NPM registry](https://www.npmjs.com/package/oracledb):
+
+```
+npm install oracledb
+```
+
+Once installed, in order to validate, simply clone the node-oracledb Github repository into whichever directory you choose
+
+```
+git clone https://github.com/oracle/node-oracledb.git
+
+```
+
+Once cloned, you can remove any directories you don't want (I chose to remove everything except the examples directory) and then modify the dbconfig.js file with the defaults for connecting to the database that is running on the Virtualbox VM you should have running.
+
+```
+module.exports = {
+  user          : process.env.NODE_ORACLEDB_USER || "hr",
+  password      : process.env.NODE_ORACLEDB_PASSWORD || "oracle",
+  connectString : process.env.NODE_ORACLEDB_CONNECTIONSTRING || "localhost/orcl",
+  externalAuth  : process.env.NODE_ORACLEDB_EXTERNALAUTH ? true : false
+};
+```
+
+Run one of the examples
+```
+node select1.js
+```
+You should get a result that looks like
+```
+[ { name: 'DEPARTMENT_ID' }, { name: 'DEPARTMENT_NAME' } ]
+[ [ 180, 'Construction' ] ]
+```
+That's really all that's needed for node-oracledb setup!
+
+## sqlplus ##
+If you also wish to be able to run sqlplus locally using the Instant Client, then do the following (basically step 5 of the Instant Client [install instructions](http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html#ic_osx_inst)), though note the different directory path than given in the install instructions based on the /opt choice we made above.
+
+Create symbolic links for required "SQL*Plus libraries" -- again, note directory structure difference (same as above)
+```
+ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} /usr/local/lib/
+```
+Add the Instant Client directory to the PATH environment variable
+```
+export PATH=/opt/oracle/instantclient:$PATH
+```
+Startup sqlplus using the "Easy Connect" form
+```
+sqlplus hr/oracle@localhost/orcl
+```
+If all went well, you'll see
+```
+SQL*Plus: Release 11.2.0.4.0 Production on Tue Apr 5 12:30:24 2016
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+```
+That's it!  I hope this helps...
