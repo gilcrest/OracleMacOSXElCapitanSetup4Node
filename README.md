@@ -165,7 +165,7 @@ $ mkdir ~/lib
 ```
 Create symbolic links for required "SQL*Plus libraries" -- again, note directory structure difference (same as above)
 ```
-ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} ~/lib/
+ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} /usr/local/lib/
 ```
 Add the Instant Client directory to the PATH environment variable
 ```
