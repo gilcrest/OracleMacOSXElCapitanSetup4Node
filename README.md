@@ -35,6 +35,9 @@ Once setup is complete, you just need to make sure your VM is up and running and
 ## Xcode
 This is a dependency of the node-oracledb driver, you get it from the Apple App Store.  It's a beefy program - close to 5GB, so you may wait a little while before it's downloaded and installed. Even after it's installed, when you open it for the first time, it will install some more stuff, so be patient....  Basically, I opened Xcode once after it was installed, but then never really needed to open it again in the context of node-oracledb usage
 
+**IMPORTANT** - there are 2 methods to install Oracle Instant Client: one method requires you to sudo with root access and would be considered a riskier install. If you are going to have more than one user on your macbook, you may wish to go this route - you can get the step by step instructions [here](https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/optVersion/README_OPT.md)
+
+
 ## Oracle Instant Client ##
 In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
 
