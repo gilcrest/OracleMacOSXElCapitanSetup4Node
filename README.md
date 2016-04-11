@@ -163,10 +163,6 @@ Create a new "~/lib" directory in your default user directory
 ```
 $ mkdir ~/lib
 ```
-Create symbolic links for required "Basic package libraries" -- note the directory difference here from the Instant Client download instructions. Since we chose the /opt path for installation of node-oracledb (and SQL*Plus libraries were put in the same directories), we need to ensure this is consistent
-```
-ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
-```
 Create symbolic links for required "SQL*Plus libraries" -- again, note directory structure difference (same as above)
 ```
 ln -s /opt/oracle/instantclient/{libsqlplus.dylib,libsqlplusic.dylib} ~/lib/
