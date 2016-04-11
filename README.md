@@ -37,7 +37,7 @@ This is a dependency of the node-oracledb driver, you get it from the Apple App 
 
 ## Oracle Instant Client ##
 
-**IMPORTANT** - there are 2 methods to install Oracle Instant Client: one method requires you to sudo with root access and would be considered a riskier install. If you are going to have more than one user on your macbook, you may wish to go this route - you can get the step by step instructions [here](https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/optVersion/README_OPT.md)
+**IMPORTANT** - there are 2 methods to install Oracle Instant Client: one method requires you to sudo with root access and would be considered a riskier install. If you are going to have more than one user on your macbook, you may wish to go this route - you can get the step by step instructions [here](https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/optVersion/README_OPT.md) If, like me, you are the sole user of your macbook or prefer the less risky install, then the set of rules below are for you.
 
 In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
 
@@ -47,36 +47,9 @@ In order to use Oracle's node-oracledb client, you need to go to the Oracle Tech
 
 *I chose the 64 bit version of these as that is appropriate for my machine.* 
 
-Once everything is downloaded, you have a couple of choices to make, based on Oracle's instructions [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-531-install-instant-client-in-opt) or [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-532-install-instant-client-in-a-user-directory) - I chose to go with the "Install Instant Client in /opt" route.  I had to do a little research on this one, as other linux servers I've worked on already had an /opt directory, but my macbook did not. 
-
-switch to the root user su (superuser) using sudo:
-
+Navigate to the Downloads folder
 ```
-$ sudo su -
-```
-
-After typing your password, you are put to the /var/root directory, switch to the root directory:
-
-```
-$ cd /
-```
-
-create the opt directory in root (after confirming it does not already exist on your macbook):
-
-```
-$ mkdir opt
-```
-
-create the /opt/oracle directory
-
-```
-$ mkdir /opt/oracle
-```
-
-navigate back to the Downloads folder (I have to use the full path here as I'm still logged in as root and can't use ~/Downloads)
-
-```
-$ cd /Users/putyourusernamehere/Downloads
+$ cd ~/Downloads
 ```
 
 Unzip each of the downloaded instant client zips
