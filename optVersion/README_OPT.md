@@ -105,4 +105,5 @@ Connected to:
 Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
 With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
 ```
-That's it!  I hope this helps...
+
+In order to continue with the node-oracledb setup, go back to the main README [here] (https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/README.md#node-oracledb)
