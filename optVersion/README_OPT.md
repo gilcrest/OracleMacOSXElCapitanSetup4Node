@@ -1,6 +1,5 @@
 # Oracle Instant Client /opt installation instructions
 
-## Oracle Instant Client ##
 In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
 
  1. Instant Client Package - Basic: All files required to run OCI, OCCI, and JDBC-OCI application
