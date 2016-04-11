@@ -1,4 +1,4 @@
-# Oracle Client and SQL*Plus Root Installation Instructions
+# Oracle Client and SQL*Plus Multi-User Installation Instructions (requires sudo)
 
 ## Oracle Instant Client ##
 In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
