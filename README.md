@@ -89,12 +89,6 @@ Next, link the OCI libraries into the directory you just made (note, you should 
 ln -s $(pwd)/{libclntsh.dylib,libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
 
-exit to logout of the root user
-
-```
-$ exit
-```
-
 That's it for the Instant Client installation, you can validate proper installation in a few different ways - we will validate in two ways:
 
  1. install sqlplus
