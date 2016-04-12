@@ -103,7 +103,7 @@ ln -s ~/instantclient_11_2/{libsqlplus.dylib,libsqlplusic.dylib} ~/lib/
 ```
 Add the Instant Client directory to the PATH environment variable
 ```
-export PATH=/opt/oracle/instantclient:$PATH
+export PATH=~/instantclient_11_2:$PATH
 ```
 Startup sqlplus using the "Easy Connect" form
 ```
