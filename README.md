@@ -37,7 +37,7 @@ This is a dependency of the node-oracledb driver, you get it from the Apple App 
 
 ## Oracle Instant Client ##
 
-**IMPORTANT** - there are 2 methods to install Oracle Instant Client: one method requires you to sudo with root access and would be considered a riskier install. If you are going to have more than one user on your macbook, you may wish to go this route - you can get the step by step instructions [here](https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/optVersion/README_OPT.md) If, like me, you are the sole user of your macbook or prefer the less risky install, then the set of rules below are for you.
+**IMPORTANT** - there are 2 methods to install Oracle Instant Client: one method requires you to sudo with root access and is considered a riskier install (given you need to sudo). If you are going to have more than one user on your macbook, you may wish to go this route - you can get the step by step instructions [here](https://github.com/gilcrest/OracleMacOSXElCapitanSetup4Node/blob/master/optVersion/README_OPT.md) If, like me, you are the sole user of your macbook or prefer the less risky install, then the set of rules below are for you.
 
 In order to use Oracle's node-oracledb client, you need to go to the Oracle Technology Network Site and download three files:
 
