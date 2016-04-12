@@ -70,11 +70,13 @@ Once you've completed unzipping all 3 files, you'll notice they're all exploded 
 ```
 mv instantclient_11_2 ~/
 ```
-
-create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
-
+Navigate to the directory
 ```
-$ ln -s /opt/oracle/instantclient/libclntsh.dylib.11.1 /opt/oracle/instantclient/libclntsh.dylib
+cd ~/instantclient_11_2
+```
+create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
+```
+ln -s libclntsh.dylib.11.1 libclntsh.dylib
 ```
 
 create more symbolic links, but this time to the default library path (/usr/local/lib)
