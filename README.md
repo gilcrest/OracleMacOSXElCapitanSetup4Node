@@ -74,11 +74,11 @@ Navigate to the directory
 ```
 cd ~/instantclient_11_2
 ```
-create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
+Create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
 ```
 ln -s libclntsh.dylib.11.1 libclntsh.dylib
 ```
-create more symbolic links, this time link the OCI libraries into the User default library path (which likely does not exist on your machine yet):
+Create more symbolic links, this time link the OCI libraries into the User default library path (which likely does not exist on your machine yet):
 
 First, create the User lib directory
 ```
