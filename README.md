@@ -120,6 +120,7 @@ Connected to:
 Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
 With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
 ```
+**Note** - In order for your PATH variable to remain in session the next time you start a terminal, you can add it to your /etc/paths file using the instructions [here](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VwxdnBMrKCR) 
 
 ## node-oracledb ##
 
