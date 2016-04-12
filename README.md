@@ -1,7 +1,7 @@
 # OracleMacOSXElCapitanSetup4Node
 Long time Windows user here, trying to get setup on my new Macbook Pro for use with an Oracle database.  If you're an OS X / Linux wiz, this is probably not for you and you should go straight to the various Oracle installation pages, like [here](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#instosx).
 
-If you're like me and used to setting up Oracle on Windows (where they have a pretty easy database installation for their Express Edition "XE"), then the macbook OS X setup is a bit bewildering. Since I am a macbook newbie, I will spell out step by step exactly what I did to setup my local environment for node development with Oracle to aid those of you who may have a similar challenge (and to help myself for the next time I need to do this).  There are some excellent posts from folks like [Christopher Jones](https://blogs.oracle.com/opal/) and [Dan McGhan](https://jsao.io/), but most assume you know what you are doing on a macbook, and I for one do not... I give full credit to Chris and Dan, actually - their posts were tremendously helpful to me, I'm just going through in a bit more detail the steps I took to get node-oracledb up and running on my macbook. 
+If you're like me and used to setting up Oracle on Windows (where they have a pretty easy database installation for their Express Edition "XE"), then the macbook OS X setup is a bit bewildering. Since I am a macbook neophyte, I will spell out step by step exactly what I did to setup my local environment for node development with Oracle to aid those of you who may have a similar challenge (and to help myself for the next time I need to do this).  There are some excellent posts from folks like [Christopher Jones](https://blogs.oracle.com/opal/) and [Dan McGhan](https://jsao.io/), but most assume you know what you are doing on a macbook, and I for one do not... I give full credit to Chris and Dan, actually - their posts were tremendously helpful to me, I'm just going through in a bit more detail the steps I took to get node-oracledb up and running on my macbook. 
 
 There are numerous components you need to be successful on your Mac when developing node apps with Oracle, namely:
 
@@ -122,6 +122,12 @@ With the Partitioning, OLAP, Advanced Analytics and Real Application Testing opt
 ```
 
 ## node-oracledb ##
+
+Assuming all is well with above, we now need to add two temporary variables to your PATH to allow the node-oracledb installer to find the Instant Client libraries and headers (these variables only need to exist when you run your node-oracledb installation and will then naturally be removed when you close your shell or start a new terminal instance):
+```
+export OCI_LIB_DIR=~/lib
+export OCI_INC_DIR=~/instantclient_11_2/sdk/include
+```
 
 This is the fun/easy part - install node-oracledb from the [NPM registry](https://www.npmjs.com/package/oracledb):
 
