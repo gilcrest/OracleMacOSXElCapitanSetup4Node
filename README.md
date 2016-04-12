@@ -78,11 +78,15 @@ create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in th
 ```
 ln -s libclntsh.dylib.11.1 libclntsh.dylib
 ```
+create more symbolic links, this time link the OCI libraries into the User default library path (which likely does not exist on your machine yet):
 
-create more symbolic links, but this time to the default library path (/usr/local/lib)
-
+First, create the User lib directory
 ```
-$ ln -s /opt/oracle/instantclient/{libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} /usr/local/lib/
+mkdir ~/lib
+```
+Next, link the OCI libraries into the directory you just made 
+```
+ln -s $(pwd)/{libclntsh.dylib,libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
 
 exit to logout of the root user
