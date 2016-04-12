@@ -134,6 +134,8 @@ Now for the fun part - install node-oracledb from the [NPM registry](https://www
 ```
 npm install oracledb
 ```
+As part of the installation, you may see a bunch of warnings fly by, i.e. "warning: cannot refer to a non-static
+      member from the handler of a constructor function try block [-Wexceptions]", but they don't seem to do anything
 
 Once installed, in order to validate, simply clone the node-oracledb Github repository into whichever directory you choose
 
