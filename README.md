@@ -74,7 +74,7 @@ Navigate to the directory
 ```
 cd ~/instantclient_11_2
 ```
-Create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the opt/oracle/instantclient directory
+Create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) file in the ~/instantclient directory
 ```
 ln -s libclntsh.dylib.11.1 libclntsh.dylib
 ```
@@ -84,7 +84,7 @@ First, create the User lib directory
 ```
 mkdir ~/lib
 ```
-Next, link the OCI libraries into the directory you just made 
+Next, link the OCI libraries into the directory you just made (note, you should still be in the ~/instantclient_11_2 directory in order for the below command to work, given the pwd in the path)
 ```
 ln -s $(pwd)/{libclntsh.dylib,libclntsh.dylib.11.1,libnnz11.dylib,libociei.dylib} ~/lib/
 ```
