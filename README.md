@@ -105,6 +105,8 @@ Add the Instant Client directory to the PATH environment variable
 ```
 export PATH=~/instantclient_11_2:$PATH
 ```
+**Note** - In order for your PATH variable to remain in session the next time you start a terminal, you can add it to your /etc/paths file using the instructions [here](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VwxdnBMrKCR) 
+
 Startup sqlplus using the "Easy Connect" form
 ```
 sqlplus hr/oracle@localhost/orcl
@@ -120,8 +122,6 @@ Connected to:
 Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
 With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
 ```
-**Note** - In order for your PATH variable to remain in session the next time you start a terminal, you can add it to your /etc/paths file using the instructions [here](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VwxdnBMrKCR) 
-
 ## node-oracledb ##
 
 Assuming all is well with above, we now need to add two temporary variables to your PATH to allow the node-oracledb installer to find the Instant Client libraries and headers. These variables only need to exist when you run your node-oracledb installation and will then naturally be removed when you close your shell or start a new terminal instance:
