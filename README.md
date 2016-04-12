@@ -123,13 +123,13 @@ With the Partitioning, OLAP, Advanced Analytics and Real Application Testing opt
 
 ## node-oracledb ##
 
-Assuming all is well with above, we now need to add two temporary variables to your PATH to allow the node-oracledb installer to find the Instant Client libraries and headers (these variables only need to exist when you run your node-oracledb installation and will then naturally be removed when you close your shell or start a new terminal instance):
+Assuming all is well with above, we now need to add two temporary variables to your PATH to allow the node-oracledb installer to find the Instant Client libraries and headers. These variables only need to exist when you run your node-oracledb installation and will then naturally be removed when you close your shell or start a new terminal instance:
 ```
 export OCI_LIB_DIR=~/lib
 export OCI_INC_DIR=~/instantclient_11_2/sdk/include
 ```
 
-This is the fun/easy part - install node-oracledb from the [NPM registry](https://www.npmjs.com/package/oracledb):
+Now for the fun part - install node-oracledb from the [NPM registry](https://www.npmjs.com/package/oracledb):
 
 ```
 npm install oracledb
