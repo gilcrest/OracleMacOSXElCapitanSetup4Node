@@ -105,7 +105,7 @@ Add the Instant Client directory to the PATH environment variable
 ```
 export PATH=~/instantclient_11_2:$PATH
 ```
-**Note** - In order for this PATH variable addition to persist the next time you start a terminal, you can add it to your /etc/paths file using the instructions [here](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VwxdnBMrKCR) 
+**Note** - In order for this PATH variable addition to persist the next time you start a terminal, you can add it to your /etc/paths file using the instructions [here](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VwxdnBMrKCR) - the instructions are for Mountain Lion, but they work for El Capitan as well.
 
 Startup sqlplus using the "Easy Connect" form
 ```
